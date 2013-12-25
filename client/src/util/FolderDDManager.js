@@ -29,7 +29,7 @@ define('FolderDDManager', [], function() {
     if (item.isFile) {
         // Get file
         item.file(function(file) {
-            console.log("File: " + path + file.name);
+            // console.log("File: " + path + file.name);
             self.readFileText(file); 
         }, _.bind(self.error, self));
     } else if (item.isDirectory) {

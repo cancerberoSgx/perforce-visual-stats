@@ -40,6 +40,15 @@ define('BaseView', ['backbone'], function() {
 			this.fixNavigationLinks();
 			// debugger;
 			this.delegateEvents();
+
+			/**
+			subclasses may have a method afterRender that will be called for performing subclass specific task that need to be executed fter the view is rendered. 
+			@method afterRender
+			*/
+			if(_(this.afterRender).isFunction()) {
+				this.afterRender();
+			}
+
 			return this;
 		}
 		/**

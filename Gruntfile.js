@@ -141,8 +141,8 @@ module.exports = function(grunt) {
 	/////TASK DEFINITIONS
 	
 	grunt.registerTask('default', [ 'clean', 'jshint', 'jst', 'requirejs' ]);
-	// grunt.registerTask('run', [ 'connect', 'watch' ]);
-	grunt.registerTask('run', [ 'express', 'watch' ]);
+	grunt.registerTask('run', [ 'connect', 'watch' ]);
+	// grunt.registerTask('run', [ 'express', 'watch' ]);
 	grunt.registerTask('apidoc', [ 'clean', 'yuidoc' ]);
 
 	

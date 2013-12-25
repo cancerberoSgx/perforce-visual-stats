@@ -4,8 +4,6 @@ define('Main', ['Application', 'backbone'], function(Application) {
 		// var ns = jsCodeEditor;
 		var application = new Application();
 		application.start(function(){
-			var dropZone = document.querySelector('[dropzone]');
-			application.folderDDManager.install(dropZone); 
 		});
 	};
 });
